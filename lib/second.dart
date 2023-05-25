@@ -10,8 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -39,10 +37,14 @@ class MyApp extends StatelessWidget {
                         color: Color(0XFF0f2f2f2),
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Icon(Icons.list_rounded),
+                      child: Image(
+                        image: AssetImage('assets/images/filter.png'),
+                        height: 20,
+                        width: 20,
+                      ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(8),
+                      padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
                         color: Color(0xff011667),
                         shape: BoxShape.circle,
@@ -122,11 +124,14 @@ class MyApp extends StatelessWidget {
                             Container(
                               padding: EdgeInsets.all(12),
                               decoration: BoxDecoration(
-                                color: Color(0XFFa2abe0),
-                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0XFFAFB6D7),
+                                borderRadius: BorderRadius.circular(15),
                               ),
-                              child: Icon(
-                                Icons.save_sharp,
+                              child: Image(
+                                image: AssetImage('assets/images/bookmark.png'),
+                                height: 20,
+                                width: 20,
+                                color: Color(0xffdbdbda),
                               ),
                             ),
                           ],
@@ -160,17 +165,17 @@ class MyApp extends StatelessWidget {
                                   Text(
                                     'Subject and studio photography',
                                     style: TextStyle(
-                                        color: Color(0XFFa2abe0), fontSize: 16),
+                                        color: Color(0XFFAFB6D7), fontSize: 16),
                                   ),
                                   Text(
                                     'of goods for an online stor. Photo',
                                     style: TextStyle(
-                                        color: Color(0XFFa2abe0), fontSize: 16),
+                                        color: Color(0XFFAFB6D7), fontSize: 16),
                                   ),
                                   Text(
                                     'processing',
                                     style: TextStyle(
-                                        color: Color(0XFFa2abe0), fontSize: 16),
+                                        color: Color(0XFFAFB6D7), fontSize: 16),
                                   ),
                                 ],
                               ),
@@ -181,7 +186,7 @@ class MyApp extends StatelessWidget {
                                     Container(
                                       padding: EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: Color(0XFFa2abe0),
+                                        color: Color(0XFFAFB6D7),
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: Text(
@@ -194,7 +199,7 @@ class MyApp extends StatelessWidget {
                                       padding: EdgeInsets.all(8),
                                       decoration: BoxDecoration(
                                         // color: Colors.indigo.shade700,
-                                        color: Color(0XFFa2abe0),
+                                        color: Color(0XFFAFB6D7),
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: Text(
